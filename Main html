@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="web.jpg/jpeg" type="logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>ER.Cars</title>
+</head>
+<body>
+    <div id="text"><!--Span element-->
+    <span>E</span>
+    <span>R</span>&nbsp;
+    <span>C</span>
+    <span>A</span>
+    <span>R</span>
+    <span>S</span>
+    </div>
+    <div class="box">
+        <img src="image.png"><!--Image car-->
+    </div>
+    <div class="social-icons">
+        <a href="main.html" i class="fab fa-facebook"></i></a>
+        <a href="main.html" i class="fab fa-instagram"></i></a>
+        <a href="main.html" i class="fab fa-twitter"></i></a>
+    </div>
+    <header><!--header-->
+        <div class="navbar">
+            <div class="logo">ER.Cars</div><!--Logo-->
+            <ul class="links">
+                <li><a href="#text">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#discount">Rental Cars</a></li>
+                <li><a href="#member-card">Our Service</a></li>
+                <li><a href="#part4">Contact</a></li>
+            </ul>
+            <a href="#part2" class="action_btn">Rental Now</a><!--Rental now btn-->
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>  
+        <div class="texxt">
+            <div class="text-slider">
+                <p id="text"></p> <!-- Këtu do të shfaqen fjalitë dinamike -->
+            </div>
+        </div>
+    </header>
+    </div><!--Section discount-->
+   <div id="discount">
+    <div class="offer-container">
+        <!-- Offer 1 -->
+        <div class="offer-card left">
+            <div class="car-image" style="background-image: url('12.jpg');">
+                <div class="overlay">
+                    <div class="discount-info">
+                        <span class="discount-value">30%</span>
+                        <span class="discount-text">DISCOUNT</span>
+                    </div>
+                    <h2>FOR SPEED AND COMFORT</h2>
+                    <p>Book now and save up to 30% on midweek rentals.</p>
+                    <a href="button.html">
+                        <button class="offer-button">Get offer</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card right">
+            <div class="car-image" style="background-image: url('3.jpg');">
+                <div class="overlay">
+                    <div class="discount-info">
+                        <span class="discount-value">20%</span>
+                        <span class="discount-text">DISCOUNT</span>
+                    </div>
+                    <h2>GET THIS BEAST FOR A LIMITED OFFER</h2>
+                    <p>Take advantage of benefits and preferential rates.</p>
+                  <a href="getoffer.html">
+                    <button class="offer-button">Register now for free</button>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card left">
+            <div class="car-image" style="background-image: url('4.jpg');">
+                <div class="overlay">
+                    <div class="discount-info">
+                        <span class="discount-value">10%</span>
+                        <span class="discount-text">DISCOUNT</span>
+                    </div>
+                    <h2>LUXURY AND SPEED IN ONE CAR</h2>
+                    <p>Enjoy a special discount for weekend rentals.</p>
+                  <a href="button2.html">
+                    <button class="offer-button">Get offer</button>
+                  </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offer 4 -->
+        <div class="offer-card right">
+            <div class="car-image" style="background-image: url('5.jpg');">
+                <div class="overlay">
+                    <div class="discount-info">
+                        <span class="discount-value">5%</span>
+                        <span class="discount-text">DISCOUNT</span>
+                    </div>
+                    <h2>BE A HURACAN LIKE THE LAMBO</h2>
+                    <p>Get exclusive rates for long-term rentals.</p>
+                    <a href="learnmore.html">
+                        <button class="offer-button">Learn more</button>
+                    </a>
+                </div>
+                <div class="discount animate-in">
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="member-card">
+    <div class="title">Our Workers</div>
+
+    <!-- Kartat e punonjësve -->
+    <div class="card-container">
+        <!-- Kartat e individëve -->
+        <div class="team-member">
+            <img src="101.jpg" alt="Member 1">
+            <div class="name">Johana Doe</div>
+            <div class="role">Developer</div>
+            <div class="info">Backend Development Expert</div>
+            <div class="social-links">
+                
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="100.jpg" alt="Member 2">
+            <div class="name">Elasa Jusx</div>
+            <div class="role">Designer</div>
+            <div class="info">UI/UX Designer</div>
+            <div class="social-links">
+                
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="00.jpg" alt="Member 3">
+            <div class="name">Markela Johnson</div>
+            <div class="role">Project Manager</div>
+            <div class="info">Agile Methodology Expert</div>
+            <div class="social-links">
+               
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="000.jpg" alt="Member 4">
+            <div class="name">Sarah Lee</div>
+            <div class="role">Frontend Developer</div>
+            <div class="info">Frontend Technologies Expert</div>
+            <div class="social-links">
+                
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="0000.jpg" alt="Member 5">
+            <div class="name">Liam Brown</div>
+            <div class="role">Designer</div>
+            <div class="info">Creative Visionary</div>
+            <div class="social-links">
+                
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="00000.jpg" alt="Member 6">
+            <div class="name">Olivio White</div>
+            <div class="role">Marketing</div>
+            <div class="info">Digital Marketing Strategist</div>
+            <div class="social-links">
+               
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="000000.jpg" alt="Member 7">
+            <div class="name">Sohia Wiclson</div>
+            <div class="role">Developer</div>
+            <div class="info">Full-Stack Development</div>
+            <div class="social-links">
+               
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="0000000.jpg" alt="Member 8">
+            <div class="name">Dasid Dacis</div>
+            <div class="role">Designer</div>
+            <div class="info">Visual Design Expert</div>
+            <div class="social-links">
+               
+            </div>
+        </div>
+    </div>
+</div>
+   </div>
+    </div>
+  </div>
+  
+  <section>
+    <div id="about-us">
+        <div class="container">
+            <!-- WHY Us Section -->
+            <div class="span-text">
+                <span>W</span>
+                <span>H</span>
+                <span>Y</span>&nbsp;
+                <span>U</span>
+                <span>S</span>
+            </div>
+            <div class="paragraph2">
+                <p><strong>WHY Us?</strong> Choosing the right car rental service can make all the difference in your journey, and that’s why we stand out...</p>
+            </div>
+    
+            <!-- Main Car Photo (222.jpg) -->
+            <div class="photo-container">
+                <div class="photo-title">Rented Car</div>
+                <img src="222.jpg" alt="Rented Audi RS6" class="photo">
+                <div class="photo-text">A customer rented an AUDI RS6 from our company and he is very satisfied.</div>
+                <div class="rental-button">
+                    <button>RENT IT NOW</button>
+                </div>
+            </div>
+    
+            <!-- Car Services Section -->
+            <div class="texxt-span">
+                <span>C</span>
+                <span>A</span>
+                <span>R</span>&nbsp;
+                <span>S</span>
+                <span>E</span>
+                <span>R</span>
+                <span>V</span>
+                <span>I</span>
+                <span>C</span>
+                <span>E</span>
+            </div>
+            <div class="paragraphh">
+                <p>At <strong>ER.Cars</strong> we offer comprehensive services for maintaining and repairing your vehicle...</p>
+            </div>
+    
+            <!-- Employee Photo Section -->
+            <div class="pi-container">
+                <img src="121.jpg" alt="Employees at Work" class="unique-image">
+                <div class="photoo-text">Our employees during working hours</div>
+                <div class="register-btn">
+                    <button>BOOK NOW</button>
+                </div>
+            </div>
+        </div>
+    
+        <!--Lamborghini Cars-->
+        <div class="photo-left">
+            <div class="photo-wrapper">
+                <img src="555.jpg" alt="Lamborghini Huracan Purple" class="corner-photo">
+                <div class="overlay-text">Do You Like Green,Beacuese I Love It!</div>
+                <button class="fixed-button">Take It</button>
+            </div>
+        </div>
+        
+        <div class="photo-right">
+            <div class="photo-wrapper">
+                <img src="124.jpg" alt="Lamborghini Huracan Orange" class="corner-photo">
+                <div class="overlay-text">An Orange I Dont Think So!</div>
+                <button class="fixed-button">Drive It</button>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="part4">
+    <div class="contact">
+        <h1 class="text">Contact and Support</h1>
+        <p class="intro">
+            <b>Contact With Us</b>
+            <br>
+            We are here to provide you with the best service for your car rental needs.  
+            <br>If you have any questions, special requests, or wish to book a car, please contact us through the following methods, and we will be happy to assist you!</p>
+        <form class="contact-form">
+            <div class="input-group">
+                <label for="address"><b>Address:</b></label>
+                <input type="text" id="address" placeholder="Your Address">
+            </div>
+            <div class="input-group">
+                <label for="phone"><b>Phone:</b></label>
+                <input type="text" id="phone" placeholder="Your Phone Number">
+            </div>
+            <div class="input-group">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" placeholder="Your Email">
+            </div>
+            <div class="working-hours">
+                <b>Working Hours:</b>
+                <br>
+                Monday  – Friday: 08:00 - 18:00<br>
+                Saturday – Friday: 10:00 - 14:00
+            </div>
+            <h3>Questions and Reservations:</h3>
+            <div class="input-group">
+                <input type="text" placeholder="Type your question here">
+            </div>
+            <div class="input-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="input-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time">
+            </div>
+            <div class="input-group">
+                <label for="pickup-location">Car pickup-location:</label>
+                <input type="text" id="pickup-location" placeholder="Car Location">
+            </div>
+            <div class="input-group">
+                <label for="dropoff-location">Car dropoff-location:</label>
+                <input type="text" id="dropoff-location" placeholder="Car Location">
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+    <div id="part2">
+        <h1 class="text2">Car Types and Services</h1>
+        <div class="car-gallery">
+            <div class="car-item">
+                <i class="suv">Suv</i>
+                <img src="car1.jpg" alt="car1" class="car-image">
+            </div>
+            <div class="car-item">
+                <i class="suv">Suv</i>
+                <img src="car2.jpg" alt="car2" class="car-image">
+            </div>
+            <div class="car-item">
+                <i class="suv">Suv</i>
+                <img src="car3.jpg" alt="car3" class="car-image">
+            </div>
+        </div>
+        <div class="electric-car">
+            <i class="car-type">Electric Car</i>
+            <div class="car-item">
+                <img src="car4.jpg" alt="Electric Car 1" class="car-image">
+            </div>
+            <div class="car-item">
+                <img src="car5.jpg" alt="Electric Car 2" class="car-image">
+            </div>
+        </div>
+        
+        <div class="sport-car">
+            <i class="car-type">Sport Car</i>
+            <div class="car-item">
+                <img src="car6.jpg" alt="Sport Car 1" class="car-image">
+            </div>
+            <div class="car-item">
+                <img src="car7.jpg" alt="Sport Car 2" class="car-image">
+            </div>
+            <div class="car-item">
+                <img src="car8.jpg" alt="Sport Car 3" class="car-image">
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 ER.Cars. All rights reserved.</p>
+        <p>Thank you for choosing us</p>
+  </section>
+
+   <script src="index.js"></script>
+</body>
+</html>
