@@ -1,0 +1,1103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* body */
+body{
+    height: 100vh;
+    background-color: #1799f0;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-icons a {
+    margin: 10px 0;
+    color: #000000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+    color: #007bff;
+    }
+
+li{
+    list-style: none;
+}
+/* NAV BAR */
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(250, 249, 249);
+}
+/* HEADER */
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+/* MENU */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu{
+    display: block;
+}
+
+.dropdown_menu.open{
+    height: 260px;
+}
+/* NAV BAR POSITION */
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #1E2A47;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* BTN RENTAL NOW */
+.action_btn{
+    background-color: #fff;
+    color: #3498DB;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: rgb(0, 0, 0);
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+/* ANIMATION ACTION BTN */
+@media(max-width: 992px){
+     .navbar  links,
+     .navbar .action_btn {
+        display: none;
+     }
+
+     .navbar .toggle_btn{
+        display: block;
+
+     }
+}
+/* POSITION OF ALL NAV BAR AND LOGO */
+.action_btn{
+    position: relative;
+    top: 70px;
+}
+
+.toggle_btn{
+    position: relative;
+    top: -180px;
+}
+
+.links{
+    position: relative;
+    top: -180px;
+}
+
+.logo{
+    display: flex;
+    scale: 3.5;
+    margin: 95px;
+    position: relative;
+    top: -200px;
+}
+/* ER CARS */
+#text{
+    font-size: 35px;
+    font-family: fantasy;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    margin-right: -1050px;
+    position: relative;
+    top: 10x;
+    padding-top: 200px;
+    font-weight: 500;
+    
+}
+/* ANIMATION OF THE ER Cars */
+.text span:nth-child(2){
+    animation-delay: .05s;
+}
+
+.text span:nth-child(3){
+    animation-delay: .1s;
+}
+
+.text span:nth-child(4){
+    animation-delay: .15s;
+}
+
+.text span:nth-child(5){
+    animation-delay: .2s;
+}
+
+.text span:nth-child(6){
+    animation-delay: .25s;
+}
+
+.text span:nth-child(7){
+    animation-delay: .3s;
+}
+
+.text span:nth-child(8){
+    animation-delay: .35s;
+}
+
+.text span:nth-child(9){
+    animation-delay: .4s;
+}
+
+.text span:nth-child(10){
+    animation-delay: .45s;
+}
+
+.text span:nth-child(11){
+    animation-delay: .5s;
+}
+
+.text span:nth-child(12){
+    animation-delay: .55s;
+}
+
+
+.text span{
+    color: rgb(217, 64, 21);
+    opacity: 0;
+    display: inline-block;
+    text-shadow: 3px 3px 4px ;
+    animation: animate .5s forwards;
+    transform: translate(-300px, 0) scale(0);
+
+}
+
+@keyframes animate {
+    60%{
+        transform: translate(20px, 0) scale(1);
+        color: rgb(237, 28, 28);
+    }
+    80%{
+        transform: translate(20px, 0) scale(1);
+        color: rgb(247, 239, 239);
+    }
+    100%{
+        transform: translate(0) scale(1);
+        color: rgb(224, 25, 21);
+        opacity: 1;
+    }
+}
+/* IMAGE */
+.box{
+   background: linear-gradient(125deg, #3498DB, #ffff);
+    height: 100vh;
+    right: 4px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    margin-left: -120px;
+    scale: 1.1;
+    overflow: hidden;
+}
+
+.box img{
+    box-shadow: none;
+    transition: 2s;
+    width: 100%;
+    scale: 0.9;
+    animation: oppacity 2s ease-in;
+}
+
+@keyframes oppacity{
+  0%{
+    opacity: 0;
+    scale: 0.7;
+  }
+  100%{
+    opacity: 1;
+    scale: 0.9;
+  }
+  
+}
+
+#discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    top: -100px;
+    background:linear-gradient(125deg, #3498DB, #ffff);
+    border-radius: 20px;
+
+}
+
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.offer-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #3498DB;
+}
+
+.car-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #f7f7f7;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), transparent 20%, transparent 80%, rgb(255, 255, 255));
+}
+
+/* Discount info styling with larger, bolder text */
+.discount-info {
+    text-align: center;
+}
+
+.discount-value {
+    font-size: 36px; /* Larger font size */
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.discount-text {
+    font-size: 18px; /* Slightly larger font for clarity */
+    font-weight: bold;
+}
+
+/* Title styling with larger, bold font */
+.overlay h2 {
+    font-size: 24px; /* Increased font size for title */
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* Description styling with larger, clearer font */
+.overlay p {
+    font-size: 16px; /* Increased font size for description */
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Button styling with larger text and improved hover effect */
+.offer-button {
+    padding: 10px 20px;
+    color: #3498DB;
+    background-color: transparent;
+    border: 2px solid #ffffff; /* Slightly thicker border for emphasis */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for the button text */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.offer-button:hover {
+    background-color: #e3e7f1;
+    color: #000000;
+}
+
+/* Card Animation */
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80vw;
+    max-width: 1200px;
+    opacity: 0; /* Fillimisht është e fshehur */
+    transform: translateY(50px); /* Fillimisht lëvizet nga poshtë */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.offer-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: scale(0.9);
+    opacity: 0; /* Fillimisht janë të fshehura */
+}
+
+.offer-card.left {
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.offer-card.right {
+    transform: translateX(150%);
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+/* Efekti i animacionit kur seksioni shfaqet në ekran */
+.offer-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.offer-card.active.left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.offer-card.active.right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Phrases text */
+.texxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.text-slider {
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 2em;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: -25px;
+}
+
+#text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px rgba(13, 176, 240, 0.803);
+    text-shadow: 3px 3px 4px ;
+}
+
+
+#member-card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(125deg, #3498DB, #ffff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Titulli */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;
+    animation: titleAnimation 1s ease-out forwards;
+}
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Konteineri i kartave */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Kartat e individëve */
+.team-member {
+    background:linear-gradient(125deg, #ffff, #3498DB);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Default gjendja: e fshehur */
+    transform: translateY(20px); /* Pozicionohet pak më poshtë */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.team-member .name {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.team-member .role {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.team-member .info {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    width: 90%;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+/* Kur karta bëhet e dukshme */
+.team-member.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+
+#about-us{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(125deg, #3498DB, #ffff);
+    color: black;
+}
+
+.container {
+    text-align: center;
+    position: relative; /* Kjo është e nevojshme për të pozicionuar fotot në qoshe */
+}
+
+.span-text, .texxt-span {
+    font-size: 2.5rem;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+}
+
+.paragraph2, .paragraphh {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    animation: slideIn 2s ease-out forwards;
+    opacity: 0;
+}
+
+.photo-container, .pi-container {
+    margin: 30px auto;
+    width: 60%;
+    position: relative;
+}
+
+.photo-container img, .pi-container img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.5s, opacity 0.5s;
+    max-width: 400px;
+}
+
+.photo-text, .photoo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(253, 255, 253);
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.photo-container:hover .photo-text, .pi-container:hover .photoo-text {
+    opacity: 1;
+}
+
+.photo-container:hover img, .pi-container:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.rental-button, .register-btn {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498DB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #040507;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.photo-container {
+    margin: 30px auto;
+    width: 60%;
+    position: relative;
+    animation: slideUp 2s ease-out forwards;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-container img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.5s, opacity 0.5s;
+    max-width: 400px;
+    transform: translateY(30px);
+}
+
+.photo-container:hover img {
+    transform: scale(1.05) translateY(0);
+    opacity: 0.9;
+}
+
+.photo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.photo-container:hover .photo-text {
+    opacity: 1;
+}
+
+.rental-button {
+    margin-top: 10px;
+    animation: slideUp 2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.photo-container:hover .rental-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.photo-left, .photo-right {
+    position: absolute;
+    top: 390%;
+    scale: 2.5;
+    animation: slideUp 2s ease-out forwards;
+}
+
+.photo-left {
+    left: 100px;
+}
+
+.photo-right {
+    right: 100px;
+}
+
+.corner-photo {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-left:hover .corner-photo, .photo-right:hover .corner-photo {
+    transform: scale(1.1);
+}
+
+
+
+/* Foto wrapper */
+.photo-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Imazhi bazë */
+.corner-photo {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Teksti brenda fotos */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 0; /* Fshihet fillimisht */
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Shfaq tekstin kur kalon miu mbi foton */
+.photo-wrapper:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Butonat poshtë fotos */
+.fixed-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: #3498DB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -25px; /* Butoni është 25px poshtë fotos */
+    left: 50%;
+    transform: translateX(-50%); /* Qendron në qendër të fotos */
+}
+
+/* Efekti kur kalon miu mbi foto (opsional) */
+.photo-wrapper:hover .corner-photo {
+    transform: scale(1.05); /* Zmadho pak foton kur kalon miu */
+}
+
+#part4{
+    background:linear-gradient(125deg, #3498DB, #ffff);
+    .contact {
+        background:linear-gradient(125deg, #3498DB, #ffff);
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(233, 66, 20, 0.1);
+    }
+    
+    .text {
+        text-align: center;
+        font-size: 40px;
+        color: #000000;
+        margin-bottom: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .intro {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form .input-group {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    
+    .contact-form label {
+        font-size: 40px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .contact-form input {
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .contact-form input:focus {
+        outline: none;
+        border-color: #000000;
+    }
+
+    .working-hours{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #3498DB;
+        border: none;
+        color: rgb(2, 1, 1);
+        font-size: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        background: black;
+        color: white;
+    }
+    
+    
+    #part2 {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background:linear-gradient(125deg, #ffff, #3498DB);
+    }
+    
+    .text2 {
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .car-gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .car-item {
+        width: 32%;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    
+    .car-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .car-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .suv {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    
+    .electric-car {
+        margin-top: 50px;
+    }
+    
+    .electric-car .car-type {
+        font-size: 28px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .electric-car .car-gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .electric-car .car-item {
+        width: 48%;
+        margin-bottom: 20px;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    
+    .electric-car .car-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .electric-car .car-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .sport-car {
+        margin-top: 50px;
+    }
+    
+    .sport-car .car-type {
+        font-size: 28px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .sport-car .car-gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .sport-car .car-item {
+        width: 32%;
+        margin-bottom: 20px;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    
+    .sport-car .car-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .sport-car .car-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .footer {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);  
+        transition: all 0.6s ease-out;
+    }
+    
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    
+    
+    .text, .intro, .text2 {
+        opacity: 0;
+        transform: translateY(-20px); 
+        transition: all 0.8s ease-out;
+    }
+    
+    .text.active, .intro.active, .text2.active {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    
+    
+    .car-image {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: all 0.8s ease-out;
+    }
+    
+    .car-image.active {
+        opacity: 1;
+        transform: scale(1); 
+    }
+    
+}
